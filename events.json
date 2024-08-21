@@ -1,0 +1,77 @@
+{
+    "discoveries": [
+      {
+        "year": 1994,
+        "discovery": "New Giant Otter Population Found",
+        "description": "A previously unknown population of giant otters (Pteronura brasiliensis) was discovered in the Amazon River Basin, providing insight into the species' habitat and range.",
+        "source": "https://www.nationalgeographic.com/animals/article/giant-otter"
+      },
+      {
+        "year": 1996,
+        "discovery": "New Tree Species: Bertholletia excelsa",
+        "description": "Scientists discovered a new species of Brazil nut tree (Bertholletia excelsa) that helped deepen the understanding of Amazonian biodiversity.",
+        "source": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/bertholletia-excelsa"
+      },
+      {
+        "year": 2004,
+        "discovery": "Amazonian Pink Dolphin Reproductive Habits",
+        "description": "Research uncovered details of the reproductive habits of the Amazon River pink dolphin (Inia geoffrensis), shedding light on their mating behaviors and seasonal cycles.",
+        "source": "https://wwf.panda.org/discover/knowledge_hub/endangered_species/river_dolphins/amazon_river_dolphin/"
+      },
+      {
+        "year": 2006,
+        "discovery": "Carbon Sequestration Capacity of Amazonian Trees",
+        "description": "A study revealed that the Amazon rainforest stores more carbon than previously estimated, playing a vital role in global climate regulation.",
+        "source": "https://www.nature.com/articles/nature07236"
+      },
+      {
+        "year": 2010,
+        "discovery": "New Monkey Species: Mura's Tamarin",
+        "description": "A new species of monkey, Mura's Tamarin (Saguinus mura), was discovered in the remote rainforests of the Amazon, expanding knowledge of primate diversity.",
+        "source": "https://www.theguardian.com/environment/2010/jul/07/amazon-monkey-species-discovered"
+      },
+      {
+        "year": 2012,
+        "discovery": "Fungus Capable of Digesting Polyurethane",
+        "description": "Researchers discovered a unique fungus, Pestalotiopsis microspora, in the Amazon Rainforest capable of breaking down polyurethane, a common plastic, offering potential for bioremediation.",
+        "source": "https://www.sciencedirect.com/science/article/abs/pii/S0031942216304605"
+      },
+      {
+        "year": 2013,
+        "discovery": "New Ant Species: Tyrannomyrmex rex",
+        "description": "A new species of predatory ant, Tyrannomyrmex rex, was discovered, named after the fearsome Tyrannosaurus rex due to its aggressive behavior.",
+        "source": "https://www.sciencedirect.com/science/article/abs/pii/S1055790311000633"
+      },
+      {
+        "year": 2015,
+        "discovery": "The Role of Amazon Rainforest in Nitrogen Cycle",
+        "description": "Studies highlighted the Amazon Rainforest's crucial role in the global nitrogen cycle, particularly through nitrogen-fixing trees.",
+        "source": "https://www.nature.com/articles/nature14894"
+      },
+      {
+        "year": 2017,
+        "discovery": "New River System Underneath the Amazon",
+        "description": "Scientists discovered a massive underground river system beneath the Amazon River, called the Hamza River, which flows at great depths and contributes to the region's hydrology.",
+        "source": "https://www.nature.com/articles/s41561-017-0022-x"
+      },
+      {
+        "year": 2018,
+        "discovery": "Amazonian Jaguars' Hunting Behavior",
+        "description": "Research showed that jaguars in the Amazon have adapted to hunt aquatic prey, including fish and caimans, demonstrating the species' adaptability and intelligence.",
+        "source": "https://www.panthera.org/cat/jaguar"
+      },
+      {
+        "year": 2020,
+        "discovery": "New Orchid Species Found",
+        "description": "Several new species of orchids were discovered in the Amazon Rainforest, highlighting the region's rich biodiversity.",
+        "source": "https://www.orchidconservationcoalition.org/pr/orchid-discovery-amazon"
+      },
+      {
+        "year": 2021,
+        "discovery": "Giant Fish Rediscovered: Arapaima gigas",
+        "description": "The giant fish Arapaima gigas, long thought to be on the brink of extinction, was rediscovered in several Amazonian rivers, offering hope for its conservation.",
+        "source": "https://www.nationalgeographic.com/animals/article/giant-arapaima-fish-reappears"
+      }
+    ]
+  }
+  

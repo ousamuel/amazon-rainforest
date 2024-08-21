@@ -1,0 +1,304 @@
+{
+  "history": [
+    {
+      "state": "Alabama",
+      "date": "September 16, 2004",
+      "description": "Hurricane Ivan caused widespread damage to Alabama’s coastal ecosystems, including forests and wetlands.",
+      "link": "https://www.weather.gov/mob/ivan"
+    },
+    {
+      "state": "Alaska",
+      "date": "March 24, 1989",
+      "description": "The Exxon Valdez oil spill in Prince William Sound was one of the most devastating human-caused environmental disasters, affecting marine and coastal wildlife.",
+      "link": "https://www.history.com/topics/1980s/exxon-valdez-oil-spill"
+    },
+    {
+      "state": "Arizona",
+      "date": "June 2011",
+      "description": "The Wallow Fire, the largest in Arizona's history, burned over 500,000 acres and caused significant environmental damage.",
+      "link": "https://earthobservatory.nasa.gov/images/50999/wallow-fire-arizona"
+    },
+    {
+      "state": "Arkansas",
+      "date": "May 1997",
+      "description": "The Red River flood caused massive environmental damage, especially in Arkansas' forested areas.",
+      "link": "https://en.wikipedia.org/wiki/1997_Red_River_flood#:~:text=The%20river%20crested%20at%2054,apartment%20units%20before%20being%20extinguished."
+    },
+    {
+      "state": "California",
+      "date": "August 16, 2020",
+      "description": "The August Complex Fire, the largest wildfire in California history, burned over 1 million acres and destroyed numerous ecosystems.",
+      "link": "https://storymaps.arcgis.com/stories/1a0a88e7872e48919831793fd496b814"
+    },
+    {
+      "state": "Colorado",
+      "date": "June 8, 2002",
+      "description": "The Hayman Fire was the largest in Colorado history, causing significant environmental and wildlife damage.",
+      "link": "https://www.planning.org/research/postdisaster/casestudies/haymanfire.htm"
+    },
+    {
+      "state": "Connecticut",
+      "date": "September 21, 1938",
+      "description": "The Great New England Hurricane caused widespread forest destruction in Connecticut.",
+      "link": "https://connecticuthistory.org/the-hurricane-of-1938-rocks-connecticut/#:~:text=Such%20was%20the%20case%20on,day%E2%80%9D%20in%20the%20state's%20history."
+    },
+    {
+      "state": "Delaware",
+      "date": "September 18, 2003",
+      "description": "Hurricane Isabel caused significant damage to Delaware’s coastal ecosystems and inland forests.",
+      "link": "https://www.weather.gov/phi/September2003HurricaneIsabel"
+    },
+    {
+      "state": "Florida",
+      "date": "August 24, 1992",
+      "description": "Hurricane Andrew devastated South Florida, causing massive environmental damage to the Everglades and other ecosystems.",
+      "link": "https://www.nhc.noaa.gov/outreach/history/#andrew"
+    },
+    {
+      "state": "Georgia",
+      "date": "April-May 2007",
+      "description": "The Georgia wildfires burned over 500,000 acres of forest and caused significant environmental damage.",
+      "link": "https://www.weather.gov/ffc/2007_georgia_wildfires"
+    },
+    {
+      "state": "Hawaii",
+      "date": "May 3, 2018",
+      "description": "The Kīlauea volcano eruption led to widespread destruction of Hawaii’s forests and coastal areas.",
+      "link": "https://www.nationalgeographic.com/environment/article/kilauea-volcano-eruption-lava-hawaii"
+    },
+    {
+      "state": "Idaho",
+      "date": "August 20, 1910",
+      "description": "The Great Fire of 1910, also known as the Big Burn, was one of the largest wildfires in U.S. history, devastating Idaho’s forests.",
+      "link": "https://www.fs.usda.gov/detail/ipnf/learning/history-culture/?cid=fsm9_019033"
+    },
+    {
+      "state": "Illinois",
+      "date": "July 11, 1993",
+      "description": "The Great Midwest Flood caused widespread environmental damage to Illinois' river ecosystems and floodplains.",
+      "link": "https://www.nytimes.com/1993/07/11/us/in-midwest-flood-rises-rivers.html"
+    },
+    {
+      "state": "Indiana",
+      "date": "June 7-9, 2008",
+      "description": "The Great Midwest Flood caused extensive flooding, impacting forested areas and wildlife habitats in Indiana.",
+      "link": "https://www.weather.gov/ind/june2008flooding"
+    },
+    {
+      "state": "Iowa",
+      "date": "June 2008",
+      "description": "The Iowa Flood of 2008 caused significant damage to Iowa's agricultural lands and natural habitats.",
+      "link": "https://www.iptv.org/iowastories/story/26558/this-day-2008-flood"
+    },
+    {
+      "state": "Kansas",
+      "date": "1930s",
+      "description": "The Dust Bowl era caused severe soil erosion and environmental degradation across Kansas.",
+      "link": "https://www.pbs.org/kenburns/dustbowl/"
+    },
+    {
+      "state": "Kentucky",
+      "date": "February 26, 1972",
+      "description": "The Buffalo Creek Flood, caused by the failure of a coal slurry impoundment, led to massive environmental destruction in Kentucky.",
+      "link": "https://www.appalachianhistory.net/2014/02/the-buffalo-creek-disaster.html"
+    },
+    {
+      "state": "Louisiana",
+      "date": "August 29, 2005",
+      "description": "Hurricane Katrina devastated Louisiana's coastal ecosystems, causing widespread environmental and wildlife damage.",
+      "link": "https://www.history.com/topics/natural-disasters/hurricane-katrina"
+    },
+    {
+      "state": "Maine",
+      "date": "October 1947",
+      "description": "The Great Fires of 1947 destroyed over 200,000 acres of forest in Maine, causing significant environmental damage.",
+      "link": "https://www.maine.gov/dacf/mfs/history/firehistory/1947_fires.shtml"
+    },
+    {
+      "state": "Maryland",
+      "date": "September 18, 2003",
+      "description": "Hurricane Isabel caused severe damage to Maryland’s Chesapeake Bay ecosystem and coastal forests.",
+      "link": "https://chesapeakebay.noaa.gov/storms-2003/hurricane-isabel"
+    },
+    {
+      "state": "Massachusetts",
+      "date": "September 21, 1938",
+      "description": "The Great New England Hurricane devastated forests across Massachusetts, causing widespread environmental damage.",
+      "link": "https://www.wbur.org/news/2013/09/21/1938-hurricane-anniversary"
+    },
+    {
+      "state": "Michigan",
+      "date": "1973",
+      "description": "The PBB contamination incident led to widespread environmental damage, affecting Michigan's wildlife and water systems.",
+      "link": "https://www.michiganradio.org/environment-science/2019-08-01/pbbs-the-toxic-chemical-mistake-thats-been-long-forgotten"
+    },
+    {
+      "state": "Minnesota",
+      "date": "October 12, 1918",
+      "description": "The Cloquet Fire, one of the deadliest wildfires in Minnesota history, destroyed vast areas of forest.",
+      "link": "https://www.mprnews.org/story/2018/10/11/minnesota-s-deadliest-natural-disaster-1918-cloquet-fire-remembered-100-years-later"
+    },
+    {
+      "state": "Mississippi",
+      "date": "August 29, 2005",
+      "description": "Hurricane Katrina caused massive environmental damage to Mississippi’s coastal and forest ecosystems.",
+      "link": "https://www.nbcnews.com/id/wbna9452026"
+    },
+    {
+      "state": "Missouri",
+      "date": "July 11, 1993",
+      "description": "The Great Flood of 1993 caused severe environmental damage to Missouri’s river systems and wetlands.",
+      "link": "https://www.nytimes.com/1993/07/11/us/in-midwest-flood-rises-rivers.html"
+    },
+    {
+      "state": "Montana",
+      "date": "August 2000",
+      "description": "The Montana wildfires burned over 950,000 acres, causing significant environmental damage to the state’s forests.",
+      "link": "https://www.nytimes.com/2000/08/09/us/montana-fires-ignite-fear-across-us.html"
+    },
+    {
+      "state": "Nebraska",
+      "date": "1930s",
+      "description": "The Dust Bowl era caused widespread environmental damage across Nebraska’s farmlands.",
+      "link": "https://www.pbs.org/kenburns/dustbowl/"
+    },
+    {
+      "state": "Nevada",
+      "date": "June 2006",
+      "description": "The Hawken Fire burned thousands of acres in Nevada, causing significant damage to forested areas.",
+      "link": "https://www.kolotv.com/2020/08/25/smoke-on-the-water-the-hawken-fire-14-years-later/"
+    },
+    {
+      "state": "New Hampshire",
+      "date": "September 21, 1938",
+      "description": "The Great New England Hurricane caused extensive damage to New Hampshire's forests and ecosystems.",
+      "link": "https://www.wmur.com/article/new-hampshire-1938-hurricane-anniversary/27409906"
+    },
+    {
+      "state": "New Jersey",
+      "date": "October 29, 2012",
+      "description": "Hurricane Sandy caused widespread environmental damage to New Jersey’s coastal areas, including significant impacts on wildlife and habitats.",
+      "link": "https://www.nj.gov/dep/special/hurricane-sandy/"
+    },
+    {
+      "state": "New Mexico",
+      "date": "June 26, 2011",
+      "description": "The Las Conchas Fire, one of the largest in New Mexico history, burned over 150,000 acres and caused widespread environmental destruction.",
+      "link": "https://www.santafenewmexican.com/news/local_news/remembering-the-las-conchas-fire-ten-years-later/article_29d6e004-9f63-11eb-867e-df4375b47649.html"
+    },
+    {
+      "state": "New York",
+      "date": "August 1978",
+      "description": "The Love Canal environmental disaster in New York led to widespread contamination of soil and water, impacting human and environmental health.",
+      "link": "https://www.epa.gov/history/epa-history-love-canal"
+    },
+    {
+      "state": "North Carolina",
+      "date": "September 16, 1999",
+      "description": "Hurricane Floyd caused significant flooding, leading to major environmental damage in North Carolina's coastal and inland ecosystems.",
+      "link": "https://www.weather.gov/mhx/Sep161999EventReview"
+    },
+    {
+      "state": "North Dakota",
+      "date": "April 1997",
+      "description": "The Red River Flood caused widespread environmental damage across North Dakota, impacting farmlands and wetlands.",
+      "link": "https://www.nd.gov/des/uploads/26/NDRecoveryFramework.pdf"
+    },
+    {
+      "state": "Ohio",
+      "date": "June 22, 1969",
+      "description": "The Cuyahoga River fire, caused by severe pollution, sparked environmental reforms and raised awareness about water contamination in Ohio.",
+      "link": "https://www.cleveland.com/news/2019/06/the-cuyahoga-river-fire-50-years-later-a-burning-river-taught-cleveland-to-love-clean-water.html"
+    },
+    {
+      "state": "Oklahoma",
+      "date": "1930s",
+      "description": "The Dust Bowl devastated Oklahoma’s agricultural lands, causing severe soil erosion and environmental degradation.",
+      "link": "https://www.pbs.org/kenburns/dustbowl/"
+    },
+    {
+      "state": "Oregon",
+      "date": "September 9, 2020",
+      "description": "The Oregon wildfires burned over 1 million acres, causing significant environmental damage to forests and wildlife.",
+      "link": "https://www.opb.org/article/2020/09/09/wildfire-updates-oregon-fires-wednesday/"
+    },
+    {
+      "state": "Pennsylvania",
+      "date": "October 27-31, 1948",
+      "description": "The Donora Smog incident in Pennsylvania caused severe air pollution, leading to widespread health issues and raising awareness of environmental hazards.",
+      "link": "https://www.smithsonianmag.com/smart-news/smog-so-deadly-it-inspired-clean-air-act-180955317/"
+    },
+    {
+      "state": "Rhode Island",
+      "date": "September 21, 1938",
+      "description": "The Great New England Hurricane devastated forests and coastal areas across Rhode Island, causing significant environmental damage.",
+      "link": "https://www.bostonglobe.com/metro/2018/09/19/new-england-hurricane-was-storm-that-no-one-saw-coming/X2CWwZXTScGwvV55anL8vJ/story.html"
+    },
+    {
+      "state": "South Carolina",
+      "date": "September 21, 1989",
+      "description": "Hurricane Hugo caused massive environmental damage to South Carolina’s coastal ecosystems, including forests and wetlands.",
+      "link": "https://www.ncdc.noaa.gov/news/30th-anniversary-hurricane-hugo"
+    },
+    {
+      "state": "South Dakota",
+      "date": "June 9-10, 1972",
+      "description": "The Rapid City Flood caused significant environmental damage to South Dakota’s Black Hills region, impacting forests and waterways.",
+      "link": "https://www.keloland.com/keloland-com-original/the-rapid-city-flood-remembered-50-years-later/"
+    },
+    {
+      "state": "Tennessee",
+      "date": "December 22, 2008",
+      "description": "The Kingston Fossil Plant coal ash spill in Tennessee led to one of the worst environmental disasters in U.S. history, contaminating land and waterways.",
+      "link": "https://www.tva.com/environment/environmental-stewardship/kingston-recovery"
+    },
+    {
+      "state": "Texas",
+      "date": "August 25, 2017",
+      "description": "Hurricane Harvey caused widespread flooding and environmental damage across Texas, impacting both urban and natural areas.",
+      "link": "https://www.texastribune.org/2018/08/22/hurricane-harvey-one-year-later/"
+    },
+    {
+      "state": "Utah",
+      "date": "February 8-24, 2002",
+      "description": "The Winter Olympics in Utah sparked debates about environmental impact, especially in relation to development in pristine wilderness areas.",
+      "link": "https://www.deseret.com/2002/2/8/19640762/green-or-greed-environmental-impact-of-olympics"
+    },
+    {
+      "state": "Vermont",
+      "date": "August 28, 2011",
+      "description": "Tropical Storm Irene caused severe flooding in Vermont, leading to widespread environmental damage to rivers, forests, and infrastructure.",
+      "link": "https://www.vpr.org/vpr-news/2016-08-26/tropical-storm-irene-five-years-later-how-vermont-has-recovered"
+    },
+    {
+      "state": "Virginia",
+      "date": "August 19-20, 1969",
+      "description": "Hurricane Camille caused widespread flooding and environmental destruction in Virginia, especially in mountainous areas.",
+      "link": "https://www.washingtonpost.com/news/capital-weather-gang/wp/2014/08/19/45-years-ago-hurricane-camille-ravaged-central-virginia-killing-153/"
+    },
+    {
+      "state": "Washington",
+      "date": "May 18, 1980",
+      "description": "The eruption of Mount St. Helens caused massive environmental devastation in Washington, impacting forests, wildlife, and waterways.",
+      "link": "https://www.usgs.gov/volcanoes/mount-st-helens/1980-cataclysmic-eruption"
+    },
+    {
+      "state": "West Virginia",
+      "date": "February 26, 1972",
+      "description": "The Buffalo Creek Flood, caused by the collapse of a coal slurry dam, led to severe environmental and human impacts in West Virginia.",
+      "link": "https://www.wvgazettemail.com/news/special_reports/buffalo-creek/buffalo-creek-disaster-45-years-later-some-hope-decline-others-carry-on/article_9b181a71-121f-5964-98d7-c7a66655e8ec.html"
+    },
+    {
+      "state": "Wisconsin",
+      "date": "July 11, 1993",
+      "description": "The Great Flood of 1993 caused widespread environmental damage to Wisconsin’s river systems and wetlands.",
+      "link": "https://www.weather.gov/mkx/1993_flood"
+    },
+    {
+      "state": "Wyoming",
+      "date": "Summer 1988",
+      "description": "The Yellowstone Fires of 1988 were some of the most devastating in U.S. history, burning large areas of Wyoming’s forests and wildlife habitats.",
+      "link": "https://www.nps.gov/yell/learn/nature/1988fires.htm"
+    }
+  ]
+}

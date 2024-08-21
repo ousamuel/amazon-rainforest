@@ -2,32 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  background: url("/amazon.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-color: rgb(0, 60, 0);
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.header {
+  background-color: black;
+  text-align: center;
+  color: #c6f6d5;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 90%;
+  max-width: 900px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.triangle-left {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 10px solid #c6f6d5;
+  transform: translateX(1px) translateY(10px);
+}
+.triangle-right {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 10px solid rgb(229, 231, 235);
+  transform: translateX(-1px) translateY(10px);
+}
+.chat-div {
+  position: fixed;
+  width: 450px;
+  max-width: 90%;
+  overflow: hidden;
+  bottom: 0px;
+  right: 10px;
+  background-color: white;
+}
+.chat-button {
+  position: fixed;
+  width: 450px;
+  max-width: 90%;
+  bottom: 0px;
+  right: 10px;
+}
+.chat-box {
+  overflow: scroll;
+  max-height: 400px;
+
+  display: flex;
+  flex-direction: column-reverse;
+  overflow-anchor: auto !important;
+  vertical-align: top;
+}
+.chat-message {
+  display: flex;
+  margin: 10px 0 10px 0;
+}
+
+.scroller .scroller-content .chat-message {
+  transform: translateZ(0);
+  /* fixes a bug in Safari iOS where the scroller doesn't update */
+}
+
+.result-container {
+  margin-bottom: 20px;
+}
+
+.result-list {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.result-list li {
+  margin-bottom: 5px;
 }
