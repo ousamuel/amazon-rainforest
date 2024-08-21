@@ -80,7 +80,7 @@ export default function Home() {
             >
               <img
                 className="w-[60px] mx-auto pt-1"
-                src={`/animal-gifs/${animal}.gif`}
+                src={`/animal-gifs/${animal.toLowerCase()}.gif`}
                 alt={`${animal} gif`}
               />
             </div>
