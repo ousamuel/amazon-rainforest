@@ -15,17 +15,18 @@ The project utilizes `Next.js` as the framework, Pinecone for vector search, and
 - **Animated Transitions**: Smooth transitions using custom animations to enhance the user experience.
 - **Mobile-Friendly Design**: The application is responsive and works seamlessly on different screen sizes.
 
+
 ## Project Structure
 
 The project is organized as follows:
 
-- **pages/api/chat.js**: Handles the interaction between the user and the AI-powered chat assistant, fetching responses from the OpenAI API.
+- **pages/api/chat/route.js**: Handles the interaction between the user and the AI-powered chat assistant backed by Pinecone, fetching responses from the OpenAI API.
 - **components/ChatBox.js**: The chatbox component where users can ask questions and receive answers from the AI.
 - **components/AnimatedSection.js**: Adds animations to different sections of the page for a smooth user experience.
-- **public/amazon-gifs/**: Contains various animated GIFs used to represent different categories (e.g., mammals, reptiles).
-- **lists/amazon.js**: A list of Amazon Rainforest species and environmental events in JSON format.
 
 ## Tech Stack
 
 - **Frontend**: Next.js, React.js, Tailwind CSS for responsive design.
 - **AI Integration**: OpenAI API for chat responses, Pinecone for vector search.
+- **Vector Upsertion**: Jupyter notebook for embedding and upserting vectors into Pinecone.
+

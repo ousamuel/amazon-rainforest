@@ -12,7 +12,7 @@ const ChatBox = ({
   var markdown = require("markdown").markdown;
 
   return (
-    <div className="h-1/2 md:h-[100%] w-full md:w-1/2 border-2 border-black chat-div">
+    <div className="h-1/2 md:h-[100%] w-full md:w-2/5 md:max-w-[600px] chat-div">
       {/* <section
         onClick={() => setOpenChat((prev) => !prev)}
         className="flex justify-between text-black cursor-pointer hover:bg-gray-200 border-b-2"

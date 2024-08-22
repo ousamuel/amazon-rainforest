@@ -3,24 +3,63 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar {
+  width: 0px; /* Removes space taken by default scrollbar */
+  background: transparent; /* Optional: Hide the scrollbar background */
+}
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.5) transparent; /* Firefox */
+}
+.custom-scrollbar::-webkit-scrollbar {
   width: 8px;
-  /* display: none; */
+  height: 8px;
 }
-::-webkit-scrollbar-track {
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5); /* Change scrollbar color */
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
   background: transparent;
-  border-radius: 3px;
 }
-::-webkit-scrollbar-thumb {
-  background: #555;
-  border-radius: 3px;
+.bg-custom {
+  background-color: rgb(249, 255, 249);
 }
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-html {
-  background: url("/amazon.jpg") no-repeat center center fixed;
+/* html::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/imgs/amazon.jpg");
   background-size: cover;
-  background-color: rgb(0, 60, 0);
+  background-position: center;
+  opacity: 0.5;
+  z-index: -1;
+} */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Make sure it stays behind your content */
+  overflow: hidden;
+}
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover; /* Ensures the video covers the whole screen */
+  z-index: -1;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 500;
 }
 body {
   font-family: "Roboto Slab", serif;
@@ -59,7 +98,6 @@ body {
 .chat-div {
   display: flex;
   flex-direction: column;
-  background-color: black;
 }
 .chat-button {
   /* position: fixed; */
@@ -132,4 +170,18 @@ body {
 .slide-down.show {
   transform: translateY(0px);
   opacity: 1;
+}
+.fade-in {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+.fade-in.show {
+  opacity: 1;
+}
+.info-section {
+  flex: 1 1 300px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 25px;
+  justify-content: space-between;
 }

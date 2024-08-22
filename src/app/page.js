@@ -2,6 +2,7 @@
 import { useEffect, useState, useRef } from "react";
 import Amazons from "./lists/amazon";
 import ChatBox from "./comps/ChatBox";
+import InfoSections from "./lists/InfoSections";
 import AnimatedSection from "./Animated";
 export default function Home() {
   const [openChat, setOpenChat] = useState(false);
@@ -76,97 +77,129 @@ export default function Home() {
     });
   };
   return (
-    <main className="h-[100vh] w-[100vw] flex flex-col items-center">
+    <main className="min-h-[100vh] w-[100vw] flex flex-col items-center">
       <AnimatedSection
-        effect="slide-down h-[100vh] w-[100vw] flex flex-col items-center p-4"
+        effect="fade-in"
         delay={500}
+        className="text-white min-h-screen w-full flex flex-col items-center justify-center"
       >
-        <h1 className="w-full p-6 text-2xl md:text-4xl text-center bg-black text-white rounded-t-[15px]">
-          The Amazon Rainforest: Nature&apos;s Living Wonder
-        </h1>
+        <h1 className="font-black text-7xl">The Amazon Rainforest</h1>
+        <AnimatedSection effect="fade-in" delay={2000}>
+          <h2 className="font-bold text-3xl">Nature&apos;s Living Wonder</h2>
+        </AnimatedSection>
+      </AnimatedSection>
+      <div className="video-background">
+        <video muted autoPlay loop>
+          <source
+            type="video/mp4"
+            src="https://vod-progressive.akamaized.net/exp=1724371327~acl=%2Fvimeo-transcode-storage-prod-us-west1-h264-1080p%2F01%2F53%2F15%2F375266918%2F1564299673.mp4~hmac=6597a157be1cfdac05b47ecfb56144cc86601aba99084edb0a356bd5cd93e7f0/vimeo-transcode-storage-prod-us-west1-h264-1080p/01/53/15/375266918/1564299673.mp4"
+          />
+        </video>
+      </div>
+      <section
+        className="flex flex-wrap justify-between 
+      min-h-[calc(100vh-500px)] bg-custom pb-10"
+      >
+        {InfoSections.map((section, i) => (
+          <section className="info-section" key={i}>
+            <div className="">
+              <a href={section.link} target="_blank">
+                <h3 className="mb-2 hover:text-blue-700 hover:underline">
+                  {section.title}
+                </h3>
+              </a>
+              <p>{section.content}</p>
+            </div>
+            <img
+              className="w-[150px] h-[150px] m-auto"
+              src={section.src}
+              alt={section.title}
+            />
+          </section>
+        ))}
+      </section>
 
-        <section className="flex-shrink-0 bg-black w-full border-2 border-black">
-          <div className="flex justify-evenly overflow-x-scroll">
-            {amazonCategories.map((category, i) => (
+      <section id="categories" className="bg-custom w-full">
+        <div className="flex justify-evenly overflow-x-scroll">
+          {amazonCategories.map((category, i) => (
+            <AnimatedSection
+              effect="slide-down"
+              key={i}
+              className={`flex items-center`}
+              delay={i * 100 + 200}
+            >
+              <div
+                onClick={() => setSelectedCategory(category)}
+                className={`grow cursor-pointer hover:bg-gray-700 ${
+                  selectedCategory == category && "bg-gray-500"
+                }`}
+              >
+                <img
+                  className="w-[60px]  pt-1 min-w-[60px]"
+                  src={`/amazon-gifs/${category.toLowerCase()}.gif`}
+                  alt={`${category} gif`}
+                />
+              </div>
+            </AnimatedSection>
+          ))}
+        </div>
+        <h1 className="bg-custom text-lg text-center py-2">
+          {selectedCategory ? selectedCategory : null}
+          {selectedCategory && selectedCategory !== "Fish" && "s"}
+          {selectedCategory == "Insect" && "/Arachnids"}
+        </h1>
+      </section>
+      <section
+        id="data+bot"
+        className="bg-custom md:flex grow h-[500px] w-full "
+      >
+        <div className="w-full md:w-3/5 overflow-y-auto p-2 h-full">
+          <div className="h-full">
+            {Amazons.filter((data) => {
+              if (selectedCategory === "Insect") {
+                return (
+                  data.category === "Insect" || data.category === "Arachnid"
+                );
+              }
+              return data.category === selectedCategory;
+            }).map((data, i) => (
               <AnimatedSection
                 effect="slide-down"
                 key={i}
-                className={`flex items-center mb-2 ${i == 5 && "mr-4"}`}
-                delay={i * 100 + 1500}
+                className={`flex items-center`}
+                delay={i * 100}
               >
-                <div
-                  onClick={() => setSelectedCategory(category)}
-                  className={`flex-grow cursor-pointer hover:bg-gray-700 ${
-                    selectedCategory == category && "bg-gray-500"
-                  }`}
+                <ul
+                  onClick={() => {
+                    setOpenChat(true);
+                    sendMessage(
+                      `Tell me more about the ${data.species} (${data.scientific_name}) `
+                    );
+                  }}
+                  className="px-2 hover:bg-gray-400 cursor-pointer leading-none py-1"
                 >
-                  <img
-                    className="w-[60px] mx-auto pt-1 min-w-[60px]"
-                    src={`/amazon-gifs/${category.toLowerCase()}.gif`}
-                    alt={`${category} gif`}
-                  />
-                </div>
+                  <br />
+                  <strong className="underline mb-1">
+                    {data.species} <em>({data.scientific_name})</em>
+                  </strong>
+                  <li>{data.description}</li>
+                  <br />
+                </ul>
               </AnimatedSection>
             ))}
           </div>
-          <h1 className="text-2xl text-white text-center h-[45px]">
-            {selectedCategory ? selectedCategory : null}
-            {selectedCategory && selectedCategory !== "Fish" && "s"}
-            {selectedCategory == "Insect" && "/Arachnids"}
-          </h1>
-        </section>
-        <section className=" md:flex grow overflow-y-auto w-full">
-          <div className="w-full md:w-1/2 overflow-y-auto bg-black p-2 h-full">
-            <div className="h-full">
-              {selectedCategory ? (
-                Amazons.filter((data) => {
-                  if (selectedCategory === "Insect") {
-                    return (
-                      data.category === "Insect" || data.category === "Arachnid"
-                    );
-                  }
-                  return data.category === selectedCategory;
-                }).map((data, i) => (
-                  <ul
-                    key={i}
-                    onClick={() => {
-                      setOpenChat(true);
-                      sendMessage(
-                        `Tell me more about the ${data.species} (${data.scientific_name}) `
-                      );
-                    }}
-                    className="text-white px-2 hover:bg-gray-800 cursor-pointer"
-                  >
-                    <br />
-                    <strong>
-                      {data.species} <em>({data.scientific_name})</em>
-                    </strong>
-                    <li>{data.description}</li>
-                    <br />
-                  </ul>
-                ))
-              ) : (
-                <div className="flex h-full justify-center">
-                  <img
-                    src="/amazon-gifs/south-america.gif"
-                    className="opening"
-                  />
-                </div>
-              )}
-            </div>
-          </div>
-          <ChatBox
-            className="w-full md:w-1/2"
-            openChat={openChat}
-            setOpenChat={setOpenChat}
-            sendMessage={sendMessage}
-            setMessage={setMessage}
-            messages={messages}
-            message={message}
-          />
-        </section>
-        <footer className="bg-black h-[20px] rounded-b-[15px] w-full"></footer>
-      </AnimatedSection>
+        </div>
+        <ChatBox
+          className="w-full md:w-1/2"
+          openChat={openChat}
+          setOpenChat={setOpenChat}
+          sendMessage={sendMessage}
+          setMessage={setMessage}
+          messages={messages}
+          message={message}
+        />
+      </section>
+      <footer className="bg-custom h-[50px] border-t-2 w-full px-[5%]"></footer>
     </main>
   );
 }
