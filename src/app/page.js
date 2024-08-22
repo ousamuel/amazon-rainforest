@@ -127,7 +127,7 @@ export default function Home() {
             selectedCategory && "opacity-0"
           }`}
         >
-          Click on an icon to get started with our virtual chatbot!
+          Click an icon to get started with our virtual chatbot!
         </h2>
         <div className="flex justify-evenly overflow-x-scroll">
           {amazonCategories.map((category, i) => (
@@ -163,9 +163,12 @@ export default function Home() {
       {selectedCategory && (
         <section
           id="data+bot"
-          className="bg-custom md:flex grow h-[500px] w-full "
+          className="bg-custom flex flex-col md:flex-row grow h-fit w-full"
         >
-          <div className="w-full md:w-3/5 overflow-y-auto p-2 h-full">
+          <div
+            className="w-full md:w-3/5 overflow-y-auto 
+          p-2 h-[500px] max-h-[40vh] md:max-h-[500px] border-y-2"
+          >
             <div className="h-full">
               {Amazons.filter((data) => {
                 if (selectedCategory === "Insect") {
@@ -202,7 +205,6 @@ export default function Home() {
             </div>
           </div>
           <ChatBox
-            className="w-full md:w-1/2"
             openChat={openChat}
             setOpenChat={setOpenChat}
             sendMessage={sendMessage}
