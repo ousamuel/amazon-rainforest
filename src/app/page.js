@@ -123,11 +123,11 @@ export default function Home() {
 
       <section id="categories" className="bg-custom w-full">
         <h2
-          className={`text-center smooth-fade ${
+          className={`text-center smooth-fade attention ${
             selectedCategory && "opacity-0"
           }`}
         >
-          Click on icon to get started
+          Click on an icon to get started with our virtual chatbot!
         </h2>
         <div className="flex justify-evenly overflow-x-scroll">
           {amazonCategories.map((category, i) => (
@@ -214,7 +214,7 @@ export default function Home() {
       )}
 
       <section id="articles" className="bg-custom p-10 pb-2 pt-[50px]">
-        <h1 className="text-2xl text-center">Learn More</h1>
+        <h1 className="text-2xl text-center underline">Additional Articles</h1>
         <div className="w-full flex flex-wrap justify-evenly">
           {Articles.map((article, i) => (
             <a

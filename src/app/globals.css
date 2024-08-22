@@ -211,3 +211,21 @@ body {
   padding: 10px;
   border-radius: 5px;
 }
+
+.attention {
+  animation: attention 3s infinite;
+}
+@keyframes attention {
+  0%,
+  80%,
+  90%,
+  100% {
+    transform: translateY(0);
+  }
+  85% {
+    transform: translateY(13px);
+  }
+  95% {
+    transform: translateY(8px);
+  }
+}
