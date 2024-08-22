@@ -163,7 +163,7 @@ export default function Home() {
       {selectedCategory && (
         <section
           id="data+bot"
-          className="bg-custom flex flex-col md:flex-row grow h-fit w-full"
+          className="bg-custom flex flex-col md:flex-row grow h-fit w-full "
         >
           <div
             className="w-full md:w-3/5 overflow-y-auto 

@@ -13,7 +13,7 @@ const ChatBox = ({
 
   return (
     <div
-      className="h-[500px] max-h-[40vh] md:max-h-[500px] w-full md:w-2/5 md:max-w-[600px] 
+      className="h-[500px] max-h-[40vh] md:max-h-[500px] w-full md:w-2/5 
     chat-div border-y-2"
     >
       {/* <section
