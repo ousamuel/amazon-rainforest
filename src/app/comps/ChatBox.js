@@ -12,7 +12,7 @@ const ChatBox = ({
   var markdown = require("markdown").markdown;
 
   return (
-    <div className="w-full md:w-1/2 border-2 border-black chat-div">
+    <div className="h-1/2 md:h-[100%] w-full md:w-1/2 border-2 border-black chat-div">
       {/* <section
         onClick={() => setOpenChat((prev) => !prev)}
         className="flex justify-between text-black cursor-pointer hover:bg-gray-200 border-b-2"
@@ -54,7 +54,7 @@ const ChatBox = ({
             e.preventDefault();
           }}
         >
-          <div className="w-full px-2 pb-2 border-t-2  bg-transparent text-white">
+          <div className="w-full px-2 border-t-2  bg-transparent text-white">
             <input
               className="bg-transparent h-fit w-full py-2 px-5 outline-none "
               value={message}

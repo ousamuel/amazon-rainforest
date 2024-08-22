@@ -10,9 +10,6 @@
   background: transparent;
   border-radius: 3px;
 }
-/* ::-webkit-scrollbar-track:hover {
-  background: #ffffff;
-} */
 ::-webkit-scrollbar-thumb {
   background: #555;
   border-radius: 3px;
@@ -60,7 +57,6 @@ body {
   transform: translateX(-1px) translateY(10px);
 }
 .chat-div {
-  height: 100%;
   display: flex;
   flex-direction: column;
   background-color: black;
@@ -102,33 +98,30 @@ body {
 }
 
 .opening {
-  position: fixed;
-  top: 30vh;
-  width: 0px;
   margin: auto;
-  animation: spin-out 4s ease-in-out;
-}
-.title-opening {
+  width: 120px;
+  height: 120px;
+  animation: spin-out 2s ease-in-out 1s;
 }
 @keyframes spin-out {
   0% {
-    opacity: 1;
+    opacity: 0;
     width: 0px;
-
+    height: 0px;
     transform: rotate(0deg);
   }
   45%,
   80% {
     opacity: 1;
-    width: 30vw;
-    max-width: 500px;
-    min-width: 200px;
-    transform: rotate(3600deg);
+    width: 120px;
+    height: 120px;
+    transform: rotate(720deg);
   }
   100% {
-    opacity: 0;
-    width: 30vw;
-    transform: rotate(3600deg);
+    opacity: 1;
+    width: 120px;
+    height: 120px;
+    transform: rotate(720deg);
   }
 }
 .slide-down {

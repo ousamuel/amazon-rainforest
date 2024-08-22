@@ -75,34 +75,24 @@ export default function Home() {
       });
     });
   };
-  useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 2650);
-    const finishedLoading = setTimeout(() => {
-      // setIsPageReady(true);
-    }, 3050);
-    return () => {
-      clearTimeout(timer);
-      clearTimeout(finishedLoading);
-    };
-  }, []);
-  if (isLoading) {
-    // return <SpinCoin />;
-  }
   return (
-    <main className="">
-      <AnimatedSection effect="slide-down h-[100vh] w-[100vw] flex flex-col items-center">
-        <h1 className="w-[95%] mt-2 p-6 text-2xl md:text-4xl text-center bg-black text-white rounded-t-[15px]">
+    <main className="h-[100vh] w-[100vw] flex flex-col items-center">
+      <AnimatedSection
+        effect="slide-down h-[100vh] w-[100vw] flex flex-col items-center p-4"
+        delay={500}
+      >
+        <h1 className="w-full p-6 text-2xl md:text-4xl text-center bg-black text-white rounded-t-[15px]">
           The Amazon Rainforest: Nature&apos;s Living Wonder
         </h1>
 
-        <section className="flex-shrink-0 bg-black w-[95%] border-2 border-black">
+        <section className="flex-shrink-0 bg-black w-full border-2 border-black">
           <div className="flex justify-evenly overflow-x-scroll">
             {amazonCategories.map((category, i) => (
               <AnimatedSection
                 effect="slide-down"
                 key={i}
                 className={`flex items-center mb-2 ${i == 5 && "mr-4"}`}
-                delay={i * 100 + 600}
+                delay={i * 100 + 1500}
               >
                 <div
                   onClick={() => setSelectedCategory(category)}
@@ -119,15 +109,15 @@ export default function Home() {
               </AnimatedSection>
             ))}
           </div>
-          <h1 className="text-2xl text-white text-center">
+          <h1 className="text-2xl text-white text-center h-[45px]">
             {selectedCategory ? selectedCategory : null}
             {selectedCategory && selectedCategory !== "Fish" && "s"}
             {selectedCategory == "Insect" && "/Arachnids"}
           </h1>
         </section>
-        <section className=" md:flex max-h-[70%] w-[95%]">
+        <section className=" md:flex grow overflow-y-auto w-full">
           <div className="w-full md:w-1/2 overflow-y-auto bg-black p-2 h-full">
-            <div className='h-full'>
+            <div className="h-full">
               {selectedCategory ? (
                 Amazons.filter((data) => {
                   if (selectedCategory === "Insect") {
@@ -159,7 +149,7 @@ export default function Home() {
                 <div className="flex h-full justify-center">
                   <img
                     src="/amazon-gifs/south-america.gif"
-                    className="w-[120px] h-[120px] my-auto"
+                    className="opening"
                   />
                 </div>
               )}
@@ -175,7 +165,7 @@ export default function Home() {
             message={message}
           />
         </section>
-        <footer className="bg-black h-[5px] rounded-b-[15px] w-[95%]"></footer>
+        <footer className="bg-black h-[20px] rounded-b-[15px] w-full"></footer>
       </AnimatedSection>
     </main>
   );
