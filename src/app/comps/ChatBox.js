@@ -20,7 +20,7 @@ const ChatBox = ({
         <span className="flex-grow p-2">Click to minimize</span>
         <span>-</span>
       </section> */}
-      <section className="chat-box p-5 mx-auto rounded-b-md">
+      <section className="chat-box px-2 mx-auto">
         <div className="scroller-content">
           {messages.map((message, i) => {
             let htmlContent = markdown.toHTML(message.content);
@@ -54,9 +54,9 @@ const ChatBox = ({
             e.preventDefault();
           }}
         >
-          <div className="w-full px-2 border-t-2  bg-transparent text-white">
+          <div className="w-full p-2 bg-transparent hover:bg-gray-200">
             <input
-              className="bg-transparent h-fit w-full py-2 px-5 outline-none "
+              className="bg-transparent h-fit w-full px-5 outline-none "
               value={message}
               placeholder="Hit Enter to send a message"
               onChange={(e) => setMessage(e.target.value)}
