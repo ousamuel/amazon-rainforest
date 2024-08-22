@@ -1,4 +1,4 @@
-const Animals = [
+const Amazons = [
   {
     species: "Red-bellied Piranha",
     scientific_name: "Pygocentrus nattereri",
@@ -507,6 +507,82 @@ const Animals = [
       "A tropical vine used by indigenous tribes to create curare, a potent poison applied to blow darts for hunting.",
     traits: ["vine", "poisonous", "used for hunting", "medicinal"],
   },
+  {
+    species: "Amazon Mega Fire",
+    scientific_name: "08/10/2019",
+    category: "Disaster",
+    description:
+      "The 2019 Amazon fires were some of the most severe in recent history, with over 80,000 fires recorded, leading to international outcry and major Disasteral damage.",
+    traits: [
+      "wildfires",
+      "deforestation",
+      "climate change",
+      "biodiversity loss",
+    ],
+  },
+  {
+    species: "Madeira River Flood",
+    scientific_name: "03/01/2014",
+    category: "Disaster",
+    description:
+      "Heavy rainfall in early 2014 caused severe flooding along the Madeira River, displacing thousands of people and devastating local communities and ecosystems.",
+    traits: [
+      "flooding",
+      "displacement",
+      "ecosystem disruption",
+      "weather event",
+    ],
+  },
+  {
+    species: "Chevron-Texaco Oil Spill",
+    scientific_name: "1964-1992",
+    category: "Disaster",
+    description:
+      "Chevron-Texaco was responsible for extensive oil contamination in the Amazon region of Ecuador, impacting local communities and causing severe Disasteral degradation over several decades.",
+    traits: [
+      "oil spill",
+      "water contamination",
+      "pollution",
+      "industrial disaster",
+    ],
+  },
+  {
+    species: "Brumadinho Dam Disaster",
+    scientific_name: "01/25/2019",
+    category: "Disaster",
+    description:
+      "The collapse of a tailings dam in Brumadinho, Brazil, caused a devastating mudslide, leading to Disasteral damage and loss of life. While not directly in the Amazon, its impact on local ecosystems was significant.",
+    traits: ["mudslide", "dam collapse", "pollution", "industrial disaster"],
+  },
+  {
+    species: "Hydroelectric Dams Flooding",
+    scientific_name: "06/01/2011",
+    category: "Disaster",
+    description:
+      "The Belo Monte Hydroelectric Dam's construction caused major flooding, affecting biodiversity and displacing indigenous communities in the Amazon Basin.",
+    traits: ["flooding", "displacement", "habitat loss", "hydroelectric power"],
+  },
+  {
+    species: "Amazon Fire Crisis",
+    scientific_name: "08/13/2020",
+    category: "Disaster",
+    description:
+      "In 2020, thousands of fires ravaged the Amazon Rainforest, with over 7,600 fires detected in a single week. The fires were primarily linked to deforestation and agricultural practices, causing extensive Disasteral damage.",
+  },
+  {
+    species: "Amazon Fire Season",
+    scientific_name: "09/04/2019",
+    category: "Disaster",
+    description:
+      "In 2019, the Amazon faced a record number of forest fires, with over 30,000 fires reported in August alone. The fires drew international attention due to their severity and impact on the world's largest rainforest.",
+  },
+  {
+    species: "Brazil Drought Fires",
+    scientific_name: "07/15/2017",
+    category: "Disaster",
+    description:
+      "During a severe drought in 2017, wildfires broke out across the Amazon, fueled by dry conditions. These fires burned large swaths of forest, exacerbating deforestation and threatening local wildlife.",
+  },
 ];
 
-export default Animals;
+export default Amazons;

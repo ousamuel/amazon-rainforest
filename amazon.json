@@ -1,5 +1,5 @@
 {
-  "animals": [
+  "amazon": [
     {
       "species": "Red-bellied Piranha",
       "scientific_name": "Pygocentrus nattereri",
@@ -530,6 +530,61 @@
       "category": "Plant",
       "description": "A tropical vine used by indigenous tribes to create curare, a potent poison applied to blow darts for hunting.",
       "traits": ["vine", "poisonous", "used for hunting", "medicinal"]
+    },
+    {
+      "species": "Amazon Mega Fire",
+      "scientific_name": "08/10/2019",
+      "category": "Environment",
+      "description": "The 2019 Amazon fires were some of the most severe in recent history, with over 80,000 fires recorded, leading to international outcry and major environmental damage.",
+      "traits": [
+        "wildfires",
+        "deforestation",
+        "climate change",
+        "biodiversity loss"
+      ]
+    },
+    {
+      "species": "Madeira River Flood",
+      "scientific_name": "03/01/2014",
+      "category": "Environment",
+      "description": "Heavy rainfall in early 2014 caused severe flooding along the Madeira River, displacing thousands of people and devastating local communities and ecosystems.",
+      "traits": [
+        "flooding",
+        "displacement",
+        "ecosystem disruption",
+        "weather event"
+      ]
+    },
+    {
+      "species": "Chevron-Texaco Oil Spill",
+      "scientific_name": "1964-1992",
+      "category": "Environment",
+      "description": "Chevron-Texaco was responsible for extensive oil contamination in the Amazon region of Ecuador, impacting local communities and causing severe environmental degradation over several decades.",
+      "traits": [
+        "oil spill",
+        "water contamination",
+        "pollution",
+        "industrial disaster"
+      ]
+    },
+    {
+      "species": "Brumadinho Dam Disaster",
+      "scientific_name": "01/25/2019",
+      "category": "Environment",
+      "description": "The collapse of a tailings dam in Brumadinho, Brazil, caused a devastating mudslide, leading to environmental damage and loss of life. While not directly in the Amazon, its impact on local ecosystems was significant.",
+      "traits": ["mudslide", "dam collapse", "pollution", "industrial disaster"]
+    },
+    {
+      "species": "Hydroelectric Dams Flooding",
+      "scientific_name": "06/01/2011",
+      "category": "Environment",
+      "description": "The Belo Monte Hydroelectric Dam's construction caused major flooding, affecting biodiversity and displacing indigenous communities in the Amazon Basin.",
+      "traits": [
+        "flooding",
+        "displacement",
+        "habitat loss",
+        "hydroelectric power"
+      ]
     }
   ]
 }

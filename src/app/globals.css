@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 8px;
+  /* display: none; */
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 3px;
+}
+/* ::-webkit-scrollbar-track:hover {
+  background: #ffffff;
+} */
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 html {
   background: url("/amazon.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -42,25 +60,19 @@ body {
   transform: translateX(-1px) translateY(10px);
 }
 .chat-div {
-  position: fixed;
-  width: 450px;
-  max-width: 90%;
-  overflow: hidden;
-  bottom: 0px;
-  right: 10px;
-  background-color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
 }
 .chat-button {
-  position: fixed;
-  width: 450px;
-  max-width: 90%;
-  bottom: 0px;
-  right: 10px;
+  /* position: fixed; */
+  /* max-width: 90%; */
+  transform: translate(0%, -50%);
 }
 .chat-box {
   overflow: scroll;
-  max-height: 400px;
-
+  flex-grow: 1;
   display: flex;
   flex-direction: column-reverse;
   overflow-anchor: auto !important;
@@ -87,4 +99,44 @@ body {
 
 .result-list li {
   margin-bottom: 5px;
+}
+
+.opening {
+  position: fixed;
+  top: 30vh;
+  width: 0px;
+  margin: auto;
+  animation: spin-out 4s ease-in-out;
+}
+.title-opening {
+}
+@keyframes spin-out {
+  0% {
+    opacity: 1;
+    width: 0px;
+
+    transform: rotate(0deg);
+  }
+  45%,
+  80% {
+    opacity: 1;
+    width: 30vw;
+    max-width: 500px;
+    min-width: 200px;
+    transform: rotate(3600deg);
+  }
+  100% {
+    opacity: 0;
+    width: 30vw;
+    transform: rotate(3600deg);
+  }
+}
+.slide-down {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 0.5s ease-in-out, transform 1s;
+}
+.slide-down.show {
+  transform: translateY(0px);
+  opacity: 1;
 }
