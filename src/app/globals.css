@@ -3,8 +3,6 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar {
-  width: 0px; /* Removes space taken by default scrollbar */
-  background: transparent; /* Optional: Hide the scrollbar background */
 }
 .custom-scrollbar {
   scrollbar-width: thin;
