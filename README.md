@@ -7,9 +7,9 @@ This project is an interactive educational web application designed to inform us
 The project utilizes `Next.js` as the framework, Pinecone for vector search, and OpenAI for chat interaction. Users can ask questions about the Amazon Rainforest or click on specific categories to learn more.
 
 ## Check it out here [https://amazon-rainforest-six.vercel.app/](https://amazon-rainforest-six.vercel.app/)
-![amazon-ss-1](/imgs/amazon-ss-1.png)
-![amazon-ss-2](/imgs/amazon-ss-2.png)
-![amazon-ss-3](/imgs/amazon-ss-3.png)
+![amazon-ss-1](/public/imgs/amazon-ss-1.png)
+![amazon-ss-2](/public/imgs/amazon-ss-2.png)
+![amazon-ss-3](/public/imgs/amazon-ss-3.png)
 
 ## Features
 
