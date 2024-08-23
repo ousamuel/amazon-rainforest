@@ -129,7 +129,7 @@ export default function Home() {
         >
           Click an icon to get started with our virtual chatbot!
         </h2>
-        <div className="flex justify-evenly overflow-x-scroll">
+        <div className="flex justify-evenly overflow-x-auto pt-6">
           {amazonCategories.map((category, i) => (
             <AnimatedSection
               effect="slide-down"
