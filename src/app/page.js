@@ -84,7 +84,7 @@ export default function Home() {
         delay={300}
         className="text-white min-h-screen w-full flex flex-col items-center justify-center"
       >
-        <h1 className="font-black text-7xl">The Amazon Rainforest</h1>
+        <h1 className="font-black text-7xl text-center">The Amazon Rainforest</h1>
         <AnimatedSection effect="fade-in" delay={1500}>
           <h2 className="font-bold text-3xl">Nature&apos;s Living Wonder</h2>
         </AnimatedSection>
