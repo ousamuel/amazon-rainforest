@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-custom {
+  background-color: rgb(249, 255, 249);
+}
 h3 {
   font-size: 25px;
   font-weight: 500;

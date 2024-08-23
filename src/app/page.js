@@ -191,13 +191,13 @@ export default function Home() {
                         `Tell me more about the ${data.species} (${data.scientific_name}) `
                       );
                     }}
-                    className="px-2 hover:bg-gray-400 cursor-pointer leading-none py-1"
+                    className="w-full px-2 hover:bg-gray-400 cursor-pointer leading-none py-1"
                   >
                     <br />
                     <strong className="underline mb-1">
                       {data.species} <em>({data.scientific_name})</em>
                     </strong>
-                    <li>{data.description}</li>
+                    <li className='mt-2'>{data.description}</li>
                     <br />
                   </ul>
                 </AnimatedSection>
