@@ -14,7 +14,7 @@ const ChatBox = ({
   return (
     <div
       className="h-[500px] max-h-[40vh] md:max-h-[500px] w-full md:w-2/5 
-    chat-div border-y-2"
+    chat-div "
     >
       {/* <section
         onClick={() => setOpenChat((prev) => !prev)}
@@ -30,9 +30,7 @@ const ChatBox = ({
             return (
               <div
                 key={i}
-                className={
-                  i % 2 == 0 ? "chat-message" : "chat-message justify-end"
-                }
+                className={`chat-message ${i % 2 != 0 && "justify-end"} `}
               >
                 <div className={i % 2 == 0 ? "triangle-left" : ""}></div>
                 <div
@@ -57,7 +55,7 @@ const ChatBox = ({
             e.preventDefault();
           }}
         >
-          <div className="w-full p-2 bg-transparent hover:bg-gray-200">
+          <div className="w-full p-2 bg-gray-200 hover:bg-gray-300 border border-black mx-4">
             <input
               className="bg-transparent h-fit w-full px-5 outline-none "
               value={message}

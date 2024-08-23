@@ -81,11 +81,11 @@ export default function Home() {
     <main className="min-h-[100vh] w-[100vw] flex flex-col items-center">
       <AnimatedSection
         effect="fade-in"
-        delay={400}
+        delay={300}
         className="text-white min-h-screen w-full flex flex-col items-center justify-center"
       >
         <h1 className="font-black text-7xl">The Amazon Rainforest</h1>
-        <AnimatedSection effect="fade-in" delay={1800}>
+        <AnimatedSection effect="fade-in" delay={1500}>
           <h2 className="font-bold text-3xl">Nature&apos;s Living Wonder</h2>
         </AnimatedSection>
       </AnimatedSection>
@@ -93,7 +93,7 @@ export default function Home() {
         <video muted autoPlay loop>
           <source
             type="video/mp4"
-            src="https://vod-progressive.akamaized.net/exp=1724371327~acl=%2Fvimeo-transcode-storage-prod-us-west1-h264-1080p%2F01%2F53%2F15%2F375266918%2F1564299673.mp4~hmac=6597a157be1cfdac05b47ecfb56144cc86601aba99084edb0a356bd5cd93e7f0/vimeo-transcode-storage-prod-us-west1-h264-1080p/01/53/15/375266918/1564299673.mp4"
+            src="https://player.vimeo.com/external/375266918.hd.mp4?s=5f73d3e75aace116e984f273303b917ed50c2527&profile_id=175"
           />
         </video>
       </div>
@@ -163,11 +163,11 @@ export default function Home() {
       {selectedCategory && (
         <section
           id="data+bot"
-          className="bg-custom flex flex-col md:flex-row grow h-fit w-full "
+          className="border-y-2 pb-6 bg-custom flex flex-col md:flex-row grow h-fit w-full "
         >
           <div
             className="w-full md:w-3/5 overflow-y-auto 
-          p-2 h-[500px] max-h-[40vh] md:max-h-[500px] border-y-2"
+          p-2 h-[500px] max-h-[40vh] md:max-h-[500px] border-b-2 md:border-0"
           >
             <div className="h-full">
               {Amazons.filter((data) => {
@@ -215,8 +215,8 @@ export default function Home() {
         </section>
       )}
 
-      <section id="articles" className="bg-custom p-10 pb-2 pt-[50px]">
-        <h1 className="text-2xl text-center underline">Additional Articles</h1>
+      <section id="articles" className="bg-custom p-10 pb-2 pt-6">
+        <h1 className="text-2xl text-center">Additional Articles</h1>
         <div className="w-full flex flex-wrap justify-evenly">
           {Articles.map((article, i) => (
             <a
