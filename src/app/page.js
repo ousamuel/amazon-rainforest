@@ -78,7 +78,7 @@ export default function Home() {
     });
   };
   return (
-    <main className="min-h-[100vh] w-[100vw] flex flex-col items-center">
+    <main className="min-h-[100vh] flex flex-col items-center">
       <AnimatedSection
         effect="fade-in"
         delay={300}
