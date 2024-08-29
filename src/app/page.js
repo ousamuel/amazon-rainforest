@@ -84,7 +84,9 @@ export default function Home() {
         delay={300}
         className="text-white min-h-screen w-full flex flex-col items-center justify-center"
       >
-        <h1 className="font-black text-7xl text-center">The Amazon Rainforest</h1>
+        <h1 className="font-black text-7xl text-center">
+          The Amazon Rainforest
+        </h1>
         <AnimatedSection effect="fade-in" delay={1500}>
           <h2 className="font-bold text-3xl">Nature&apos;s Living Wonder</h2>
         </AnimatedSection>
@@ -197,7 +199,7 @@ export default function Home() {
                     <strong className="underline mb-1">
                       {data.species} <em>({data.scientific_name})</em>
                     </strong>
-                    <li className='mt-2'>{data.description}</li>
+                    <li className="mt-2">{data.description}</li>
                     <br />
                   </ul>
                 </AnimatedSection>
@@ -215,9 +217,9 @@ export default function Home() {
         </section>
       )}
 
-      <section id="articles" className="bg-custom p-10 pb-2 pt-6">
+      <section id="articles" className="bg-custom p-2 md:p-10 pb-2 pt-6">
         <h1 className="text-2xl text-center">Additional Articles</h1>
-        <div className="w-full flex flex-wrap justify-evenly">
+        <div className="w-full flex flex-wrap justify-evenly gap-4 md:gap-2">
           {Articles.map((article, i) => (
             <a
               key={i}
@@ -227,7 +229,7 @@ export default function Home() {
               style={{ backgroundImage: `url(${article.src})` }}
             >
               <div className="card-content">
-                <h3>{article.title}</h3>
+                <h4>{article.title}</h4>
               </div>
             </a>
           ))}
